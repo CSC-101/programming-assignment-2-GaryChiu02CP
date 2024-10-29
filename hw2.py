@@ -1,8 +1,6 @@
-from operator import truediv
-from tarfile import TruncatedHeaderError
-
 import data
 from data import (Point, Duration, Song, Rectangle)
+from typing import Optional
 
 # Write your functions for each part in the space below.
 
@@ -58,7 +56,7 @@ def validate_route(clinks:list[list[str]], route:list[str]) -> bool: #takes a li
     return True
 
 # Part 6
-def longest_repetition(x:list[int]): #takes a list of integers and returns the index where the longest repetition begins or none if there are no repetitions
+def longest_repetition(x:list[int]) -> Optional[int]: #takes a list of integers and returns the index where the longest repetition begins or none if there are no repetitions
     longest_combo = 0
     combo = 0
     rep_i = None

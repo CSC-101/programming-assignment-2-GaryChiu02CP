@@ -1,6 +1,5 @@
 import math
 
-
 # Representation of a two-dimensional point.
 class Point:
     # Initialize a new Point object.
